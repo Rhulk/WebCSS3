@@ -2,7 +2,7 @@
 
 Practica sobre CSS creando una web
 
-https://www.udemy.com/course/crea-pagina-web-desde-cero/
+https://www.udemy.com/course/crea-pagina-web-desde-cero/ Base <br>
 
 # Herramientas:
 
