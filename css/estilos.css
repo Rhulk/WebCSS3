@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    padding: var(--padding-container);
+}
+.hero{
+    width: 100%; 
+    height: 100vh;
+    min-height: 600px;   
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+.hero::before{
+    content: "";
+    position: absolute; /* absolutamente a su padre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+/* Nav */
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__title{
+    font-weight: 300;
+}
+.nav__link {
+    margin-left: auto; /* se alinean a la derecha gracias a la propiedad display: flex */
+    padding: 0;  /* para quitar el padding por defecto de las listas */
+    display: flex;
+    grid-auto-flow: column;/* nolose*/
+    grid-auto-columns: max-content; /* nolose*/
+    gap: 2em; /* espacio entre columnas */
+}
+.nav__items {
+    list-style: none;
+    /*margin-left: 8px;*/
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none; /* para no activar el cursor hasta estar en dispositivos moviles */
+}
+.nav__img {
+    display: block;
+    width: 30px;
+}
+.nav__close {
+    display: var(--show, none);
+
+}
+
+/* Hero container */
+
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid; /* casillas verticalmente lineas*/
+    grid-auto-rows: max-content; /* para que no crezca mas que el contenedor y deforme las lineas */
+    align-content: center;
+    gap: 1em; /* espaciado entre elementos*/
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero_title{
+    font-size: 3rem;
+}
+.hero__paragraph{
+    margin-bottom: 20px;  /*a pesar del gap lo ampliamos para el parrafo*/
+}
+.cta{
+    display: inline-block;
+    background-color: #2091f9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 32px;
+    border-radius: 32px;
+}
+
+/* Sección About */
+
+.about__main {
+
+    display: flex;
+}
