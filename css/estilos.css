@@ -10,7 +10,7 @@ body {
 
 .container{
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 
@@ -110,7 +110,66 @@ body {
 
 /* Sección About */
 
-.about__main {
+.about{
+    text-align: center;
+}
+.subtitle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.about__paragraph{
+    line-height: 1.7;
+}
+.about__main{
+    padding-top: 80px;
+    /*display: flex;  opción b para alinear los articulos horizontalmente "en columnas"  no respositive*/
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit,minmax(260px, auto)); /* opción a para alinear los articulos responsitive sin media query */
+}
+.about__icons{
+    display: grid; /* row*/
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;  /*para que todo lo que salga del elemento se oculte*/
+    margin: 0 auto; /* para centrar los elementos dentro de la clase*/
+}
+.about__icon{
+    width: 40px;
+}
 
-    display: flex;
+/*  Knowledge */
+
+.knowledge {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid; /*  por defecto son row*/
+    grid-template-columns: 1fr 1fr; /* 1 fraccion para cada columna*/
+    gap: 1em;
+    align-items: center;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img{
+    width: 100%; /* Se limita al 100% del contenedor padre: knowledge__picture que esta limitado a 500px */ 
+    display: block;
 }
