@@ -7,7 +7,7 @@ https://www.udemy.com/course/crea-pagina-web-desde-cero/
 # Herramientas:
 
 https://www.magicpattern.design/tools/css-backgrounds  fondos en CSS<br>
-https://bennettfeely.com/clippy/ <br>
+https://bennettfeely.com/clippy/ Formas para imagenes de fondo<br>
 
 
 #
