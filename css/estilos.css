@@ -173,3 +173,17 @@ body {
     width: 100%; /* Se limita al 100% del contenedor padre: knowledge__picture que esta limitado a 500px */ 
     display: block;
 }
+/* Sección precios*/
+
+.price {
+    text-align:center;
+}
+
+.price__table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
