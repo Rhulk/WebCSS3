@@ -675,3 +675,9 @@ body {
         */
     }
 }
+
+/* Sección testimonios  */
+
+.testimony {
+    background-color: var(--color-items);
+}
