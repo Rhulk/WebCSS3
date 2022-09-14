@@ -265,4 +265,26 @@ body {
     grid-template-columns: 50px 1fr 50px;
     align-items: center;
   }
-  
+  .testimony__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+  .testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+
+  }
+  .testimony_texts{
+    max-width: 700px;
+
+  }
+  .tetimony_arrow{
+    width: 90%;
+    cursor: pointer;
+  }
