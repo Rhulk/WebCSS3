@@ -303,3 +303,21 @@ body {
     width: 90%;
     cursor: pointer;
   }
+
+  /* Questions*/
+
+  .questions {
+    text-align: center;
+  }
+  .questions__container {
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .questions__padding {
+    padding: 0;
+    transition: padding .2s;
+    border: 1px solid #5454D4;
+    border-radius: 6px;
+  }
