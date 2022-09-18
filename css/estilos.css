@@ -317,7 +317,7 @@ body {
   }
   .questions__padding {
     padding: 0;
-    transition: padding .2s;
+    transition: padding .3s;
     border: 1px solid #5454D4;
     border-radius: 6px;
   }
@@ -356,6 +356,7 @@ body {
 .questions_show {
     text-align: left;
     height: 0;
+    transform: height .3s;
 }
 .questions__img{
     display: block;
